@@ -1,0 +1,9 @@
+name: "camilles-website"
+output_dir: "."
+navbar:
+  title: "Camille V. Leonard"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About Me"
+      href: about.html

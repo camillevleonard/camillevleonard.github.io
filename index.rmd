@@ -1,5 +1,45 @@
 --- 
-title: "Camille's Website"
+title: ""
+
+output:
+  html_document:
+    css: style.css
+   
 ---
 
-Welcome to my website!  
+$~$
+
+### Welcome to my website!  
+
+
+My biggest current project is working on my Data Science M.S. degree. To date, I have completed three courses shown in the table below. 
+
+
+|Class      | Course Description |  Final Grade | 
+|:----------|:----------------------------------| :--------:|
+|*Linear Models for Data Science (STAT 6021)* | An introduction to linear statistical models in the context of data science. Topics include simple and multiple linear regression, generalized linear models, time series, analysis of covariance, tree-based classification, and principal components. The primary software is R. | A |
+|*Programming and Systems for Data Science (CS 5010)* | The objective of this course is to introduce basic data analysis techniques including data analysis at scale, in the context of real-world domains such as bioinformatics, public health, marketing, security, etc. For the purpose of facilitating data manipulation and analysis, students will be introduced to essential programming techniques in Python, an increasingly prominent language for data science and “big data” manipulation. | A+ |
+|*Data Mining (SYS 6018)*| Data mining describes approaches to turning data into information. Rather than the more typical deductive strategy of building models using known principles, data mining uses inductive approaches to discover the appropriate models. These models describe a relationship between a system’s response and a set of factors or predictor variables. Data mining in this context provides a formal basis for machine learning and knowledge discovery. This course investigates the construction of empirical models from data mining for systems with both discrete and continuous valued responses. It covers both estimation and classification, and explores both practical and theoretical aspects of data mining. | A+ | 
+
+---
+
+In completing my coursework, I have gained experience in:
+
+* Fitting regression and classification models in R
+* Interpreting fitted models and selecting tuning parameters to improve performance
+* R 
+    * Caret 
+    * GGplot2
+    * Base R
+    * RStudio
+    * Rmd files 
+* Python 
+    * Matplotlib
+    * Plotly
+    * Webscraping
+* Data cleaning
+* Agile methodologies (SCRUM)
+
+Projects which showcase these skills can be found on the [Projects](/projects.html) page. 
+
+This website is created from Rmd files hosted on Github based on [this tutorial](http://nickstrayer.me/RMarkdown_Sites_tutorial/) by Nick Strayer. 

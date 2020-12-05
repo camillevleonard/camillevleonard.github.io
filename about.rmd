@@ -1,8 +1,11 @@
 --- 
 title: "About Me"
+output:
+  html_document:
+    css: style.css
 ---
 
-![Headshot](headshot.jpg)
+![Headshot](headshot.jpg){width=200px}
 
 Originally from the Tampa Bay area, I got a B.S. degree from the University of Florida in Material Science Engineering. I've worked as a Metallurgical Engineer for the last 4.5 years in Roanoke, VA. 
 

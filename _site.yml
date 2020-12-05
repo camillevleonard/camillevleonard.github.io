@@ -10,7 +10,7 @@ navbar:
     #- text: "Resume"
     #  href: /cv/cv.html
     - text: "Projects"
-      href: project.html
+      href: projects/project.html
 output:
   html_document:
     css: style.css

@@ -1362,7 +1362,7 @@ Being able to compare the precision and recall rates with the algorithm executio
 # Acknowledgements
 
 A sincere thank you to Professor Schwartz and his excellent instruction this semester. In addition, I'm very grateful to my cohort. Casual discussions about the course concepts with Sam Parsons, Edward Thompson, Michael Davies, Paul Hicks and many others has taught me a lot! They inspired much of my learning and helped to reinforce the rest. 
-
+ 
 # References and Works Cited 
 
 * Creating and using color blindness friendly color pallets: http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/#a-colorblind-friendly-palette, https://socviz.co/refineplots.html  

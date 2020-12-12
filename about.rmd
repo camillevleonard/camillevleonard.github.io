@@ -3,6 +3,7 @@ title: "About Me"
 output:
   html_document:
     css: style.css
+    theme: spacelab
 ---
 
 ![Headshot](headshot.jpg){width=200px}

@@ -2,7 +2,7 @@
 title: "About Me"
 output:
   html_document:
-    css: style.css
+    #css: style.css
     theme: spacelab
 ---
 

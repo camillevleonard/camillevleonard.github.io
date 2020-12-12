@@ -15,4 +15,6 @@ output:
   html_document:
     css: style.css
     theme: spacelab
+    include:
+      after_body: footer.html
     

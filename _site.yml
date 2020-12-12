@@ -11,5 +11,15 @@ navbar:
     #  href: /cv/cv.html
     - text: "Projects"
       href: project.html
-
+output: 
+  html_document:
+    theme: spacelab 
+    toc: true
+    toc_depth: 3
+    toc_float: 
+      collapsed: true 
+      smooth_scroll: false 
+    number_sections: false 
+    fig_caption: true 
+    code_folding: hide  
     

@@ -12,7 +12,7 @@ $~$
 ### Welcome to my website!
 
 
-My biggest current project is working on my Data Science M.S. degree. To date, I have completed three courses shown in the table below and maintained a 4.0 GPA. 
+My biggest current project is working on my Data Science M.S. degree. To date, I have completed three courses, shown in the table below, and maintained a 4.0 GPA. 
 
 |Class      | Course Description |  Final Project  | 
 |:----------|:----------------------------------| :--------:|

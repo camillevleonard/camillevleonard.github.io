@@ -3,23 +3,13 @@ output_dir: "."
 navbar:
   title: "Camille V. Leonard"
   left:
-    - text: "Home"
-      href: index.html
-    - text: "About Me"
-      href: about.html
+    #- text: "Home"
+    #  href: index.html
+    #- text: "About Me"
+    #  href: about.html
     #- text: "Resume"
     #  href: /cv/cv.html
     - text: "Projects"
       href: project.html
-output: 
-  html_document:
-    theme: spacelab 
-    toc: true
-    toc_depth: 3
-    toc_float: 
-      collapsed: true 
-      smooth_scroll: false 
-    number_sections: false 
-    fig_caption: true 
-    code_folding: hide  
-    
+output:
+  html_document:    

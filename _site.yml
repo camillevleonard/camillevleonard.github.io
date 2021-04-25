@@ -1,15 +1,24 @@
 name: "camilles-website"
 output_dir: "."
+site: rmarkdown::render_site()
 navbar:
   title: "Camille V. Leonard"
   left:
-    #- text: "Home"
-    #  href: index.html
-    #- text: "About Me"
-    #  href: about.html
-    #- text: "Resume"
-    #  href: /cv/cv.html
-    - text: "Projects"
-      href: project.html
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Resume"
+      href: https://drive.google.com/file/d/1B3EsKvFw0kLt_ZBdkYH40_6SLCZlZJCo/view?usp=sharing
+    
+  right:
+    - icon: fab fa-linkedin
+      href: https://www.linkedin.com/in/camillevleonard/
+    - icon: fab fa-github
+      href: https://github.com/camillevleonard/
+    - icon: fab fa-twitter
+      href: https://twitter.com/camillevleonard/
 output:
-  html_document:    
+  html_document: 
+    theme: yeti
+    

@@ -1,40 +1,84 @@
 --- 
 title: ""
-
 output:
   html_document:
-    #css: style.css
-    theme: spacelab
+    theme: yeti
 ---
 
 $~$
 
 ### Welcome to my website!
 
+I'm currently completing a MS in Data Science through UVA's part-time online program. I'm incredibly excited to be learning something new and love digging into the data. 
 
-My biggest current project is working on my Data Science M.S. degree. To date, I have completed three courses, shown in the table below, and maintained a 4.0 GPA. 
+Below I have listed my UVA MSDS coursework, personal projects, and additional independent learning. To view project write-ups and code please visit the included links. I'm most proud of my final project from the Data Mining class. Check it out if you have a few minutes!
 
-|Class      | Course Description |  Final Project  | 
-|:----------|:----------------------------------| :--------:|
-|*Linear Models for Data Science (STAT 6021)* | An introduction to linear statistical models in the context of data science. Topics include simple and multiple linear regression, generalized linear models, time series, analysis of covariance, tree-based classification, and principal components. The primary software is R. | [Tip Analysis of Chicago Transportation Network Company Trips](https://github.com/camillevleonard/STAT6021_FinalProject) |
-|*Programming and Systems for Data Science (CS 5010)* | The objective of this course is to introduce basic data analysis techniques including data analysis at scale, in the context of real-world domains such as bioinformatics, public health, marketing, security, etc. For the purpose of facilitating data manipulation and analysis, students will be introduced to essential programming techniques in Python, an increasingly prominent language for data science and “big data” manipulation. | [Drug Awareness Response Tool (DART)](https://github.com/camillevleonard/CS5010_FinalProject) |
-|*Data Mining (SYS 6018)*| Data mining describes approaches to turning data into information. Rather than the more typical deductive strategy of building models using known principles, data mining uses inductive approaches to discover the appropriate models. These models describe a relationship between a system’s response and a set of factors or predictor variables. Data mining in this context provides a formal basis for machine learning and knowledge discovery. This course investigates the construction of empirical models from data mining for systems with both discrete and continuous valued responses. It covers both estimation and classification, and explores both practical and theoretical aspects of data mining. | [Disaster Response](https://camillevleonard.github.io/project.html) | 
+<br>
 
-In completing my coursework, I have gained experience in:
+## **Spring 2021**
 
-* Fitting regression and classification models in R
-* Interpreting fitted models and selecting tuning parameters to improve performance
-* R 
-    * Caret 
-    * GGplot2
-    * Base R
-    * RStudio
-    * Rmd files 
-* Python 
-    * Matplotlib
-    * Plotly
-    * Webscraping
-* Data cleaning
-* Agile methodologies (SCRUM)
+### Foundations of Computer Science (CS 5012)
+
+*Course Description:* The main goal of this course is to provide an overview of fundamental computer science concepts, such as algorithm design, data structures, databases and analysis techniques. To reach this goal, topics include: algorithms for hash tables, trees, queues, sorting, graphs; key-value stores at scale; database topics such as RA, ER, and the MySQL language; and finally some advanced analysis techniques. 
+
+![](Images/star_planet.jpg){width=400}
+
+[Mini SQL Project: Kepler Telescope Data](CS_5012_Mini_Project.html)
+
+*Project Description:* A data set was selected in order to create a SQLite database containing 3-4 tables. The database was then queried to create data frames that were used to create visualizations. 
+
+![](Images/9.7_Mini_Project_ER_Diagram_3.png){width=600}
+
+[Creating ER Diagram Practice](CS_5012_ER_Diagram.html)
+
+<br>
+
+## **Fall 2020**
+
+### Data Mining (SYS 6018)
+
+*Course Description:* Data mining describes approaches to turning data into information. Rather than the more typical deductive strategy of building models using known principles, data mining uses inductive approaches to discover the appropriate models. These models describe a relationship between a system’s response and a set of factors or predictor variables. Data mining in this context provides a formal basis for machine learning and knowledge discovery. This course investigates the construction of empirical models from data mining for systems with both discrete and continuous valued responses. It covers both estimation and classification, and explores both practical and theoretical aspects of data mining.
+
+![](Images/NPR_destruction.jpg){width=500}
+
+[Final Project: Haitain Earthquake Disaster Response](2020-11-22-haitian-blue-tarp/project.html)
+
+*Project Description:* Used data modeling techniques (logistic regression, LDA, QDA, KNN, SVM, and random forest) to predict the presence of blue tarps from disaster relief data.  
+
+<br>
+
+## **Summer 2020**
+
+### Linear Models for Data Science (STAT 6021)
+
+*Course Description:* An introduction to linear statistical models in the context of data science. Topics include simple and multiple linear regression, generalized linear models, time series, analysis of covariance, tree-based classification, and principal components. The primary software is R. 
+
+![](Images/Chicago.jpg){height=400}
+
+[Final Project: Tip Analysis of Chicago Transportation Network Company Trips](https://github.com/camillevleonard/STAT6021_FinalProject)
+
+*Project Description* Logistic regression was applied to the City of Chicago’s Transportation Networking Companies (TNC) “Trips” data set. Our group set out to predict whether a driver would receive a tip.  
+
+<br>
+
+### Programming and Systems for Data Science (CS 5010)
+
+*Course Description:* The objective of this course is to introduce basic data analysis techniques including data analysis at scale, in the context of real-world domains such as bioinformatics, public health, marketing, security, etc. For the purpose of facilitating data manipulation and analysis, students will be introduced to essential programming techniques in Python, an increasingly prominent language for data science and “big data” manipulation.
+
+![2017 National Drug-Associated Death Rates](Images/DART.jpg)
+
+[Final Project: Drug Awareness Response Tool (DART)](https://github.com/camillevleonard/CS5010_FinalProject) 
+
+*Project Description:* This project aims to develop knowledge and insight into the drug epidemic in the US between the years 2000-2017 using data accumulated by IHME through various governmental sources, including the CDC. The python module is intended to be flexible, allowing queries for all states, one state, all years in the time period, or even one year. The output is tabular in some cases and graphical in other cases. We intend the user to be at least familiar with python coding, data manipulation, and data visualization. The queries are robust, however, and do not require modifications for most basic queries.
+
+<br>
+
+
+## **Additional Learning**
+
+* [How Git Works](https://www.pluralsight.com/courses/how-git-works) 
+
+<br>
+<br>
 
 This website is created from Rmd files hosted on Github based on [this tutorial](http://nickstrayer.me/RMarkdown_Sites_tutorial/) by Nick Strayer. 

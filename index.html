@@ -15,15 +15,24 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -35,11 +44,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -52,32 +56,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 
 
@@ -87,10 +66,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -107,40 +82,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 52px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h2 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h3 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h4 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h5 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h6 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -168,7 +116,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -180,7 +128,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -191,10 +139,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -206,7 +167,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -283,17 +243,40 @@ $(document).ready(function () {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="project.html">Projects</a>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+<li>
+  <a href="https://drive.google.com/file/d/1B3EsKvFw0kLt_ZBdkYH40_6SLCZlZJCo/view?usp=sharing">Resume</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://www.linkedin.com/in/camillevleonard/">
+    <span class="fab fa-linkedin"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/camillevleonard/">
+    <span class="fab fa-github"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/camillevleonard/">
+    <span class="fab fa-twitter"></span>
+     
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -304,43 +287,62 @@ $(document).ready(function () {
 <p><span class="math inline">\(~\)</span></p>
 <div id="welcome-to-my-website" class="section level3">
 <h3>Welcome to my website!</h3>
-<p>My biggest current project is working on my Data Science M.S. degree. To date, I have completed three courses, shown in the table below, and maintained a 4.0 GPA.</p>
-<table>
-<colgroup>
-<col width="19%" />
-<col width="62%" />
-<col width="17%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Class</th>
-<th align="left">Course Description</th>
-<th align="center">Final Project</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><em>Linear Models for Data Science (STAT 6021)</em></td>
-<td align="left">An introduction to linear statistical models in the context of data science. Topics include simple and multiple linear regression, generalized linear models, time series, analysis of covariance, tree-based classification, and principal components. The primary software is R.</td>
-<td align="center"><a href="https://github.com/camillevleonard/STAT6021_FinalProject">Tip Analysis of Chicago Transportation Network Company Trips</a></td>
-</tr>
-<tr class="even">
-<td align="left"><em>Programming and Systems for Data Science (CS 5010)</em></td>
-<td align="left">The objective of this course is to introduce basic data analysis techniques including data analysis at scale, in the context of real-world domains such as bioinformatics, public health, marketing, security, etc. For the purpose of facilitating data manipulation and analysis, students will be introduced to essential programming techniques in Python, an increasingly prominent language for data science and “big data” manipulation.</td>
-<td align="center"><a href="https://github.com/camillevleonard/CS5010_FinalProject">Drug Awareness Response Tool (DART)</a></td>
-</tr>
-<tr class="odd">
-<td align="left"><em>Data Mining (SYS 6018)</em></td>
-<td align="left">Data mining describes approaches to turning data into information. Rather than the more typical deductive strategy of building models using known principles, data mining uses inductive approaches to discover the appropriate models. These models describe a relationship between a system’s response and a set of factors or predictor variables. Data mining in this context provides a formal basis for machine learning and knowledge discovery. This course investigates the construction of empirical models from data mining for systems with both discrete and continuous valued responses. It covers both estimation and classification, and explores both practical and theoretical aspects of data mining.</td>
-<td align="center"><a href="https://camillevleonard.github.io/project.html">Disaster Response</a></td>
-</tr>
-<tr class="even">
-<td align="left">Currently Taking: <em>Foundations of Computer Science</em></td>
-<td align="left">The main goal of this course is to provide an overview of fundamental computer science concepts, such as algorithm design, data structures, databases and analysis techniques. To reach this goal, topics include: algorithms for hash tables, trees, queues, sorting, graphs; key-value stores at scale; database topics such as RA, ER, and the MySQL language; and finally some advanced analysis techniques.</td>
-<td align="center"></td>
-</tr>
-</tbody>
-</table>
+<p>I’m currently completing a MS in Data Science through UVA’s part-time online program. I’m incredibly excited to be learning something new and love digging into the data.</p>
+<p>Below I have listed my UVA MSDS coursework, personal projects, and additional independent learning. To view project write-ups and code please visit the included links. I’m most proud of my final project from the Data Mining class. Check it out if you have a few minutes!</p>
+<p><br></p>
+</div>
+<div id="spring-2021" class="section level2">
+<h2><strong>Spring 2021</strong></h2>
+<div id="foundations-of-computer-science-cs-5012" class="section level3">
+<h3>Foundations of Computer Science (CS 5012)</h3>
+<p><em>Course Description:</em> The main goal of this course is to provide an overview of fundamental computer science concepts, such as algorithm design, data structures, databases and analysis techniques. To reach this goal, topics include: algorithms for hash tables, trees, queues, sorting, graphs; key-value stores at scale; database topics such as RA, ER, and the MySQL language; and finally some advanced analysis techniques.</p>
+<p><img src="Images/star_planet.jpg" width="400" /></p>
+<p><a href="CS_5012_Mini_Project.html">Mini SQL Project: Kepler Telescope Data</a></p>
+<p><em>Project Description:</em> A data set was selected in order to create a SQLite database containing 3-4 tables. The database was then queried to create data frames that were used to create visualizations.</p>
+<p><img src="Images/9.7_Mini_Project_ER_Diagram_3.png" width="600" /></p>
+<p><a href="CS_5012_ER_Diagram.html">Creating ER Diagram Practice</a></p>
+<p><br></p>
+</div>
+</div>
+<div id="fall-2020" class="section level2">
+<h2><strong>Fall 2020</strong></h2>
+<div id="data-mining-sys-6018" class="section level3">
+<h3>Data Mining (SYS 6018)</h3>
+<p><em>Course Description:</em> Data mining describes approaches to turning data into information. Rather than the more typical deductive strategy of building models using known principles, data mining uses inductive approaches to discover the appropriate models. These models describe a relationship between a system’s response and a set of factors or predictor variables. Data mining in this context provides a formal basis for machine learning and knowledge discovery. This course investigates the construction of empirical models from data mining for systems with both discrete and continuous valued responses. It covers both estimation and classification, and explores both practical and theoretical aspects of data mining.</p>
+<p><img src="Images/NPR_destruction.jpg" width="500" /></p>
+<p><a href="2020-11-22-haitian-blue-tarp/project.html">Final Project: Haitain Earthquake Disaster Response</a></p>
+<p><em>Project Description:</em> Used data modeling techniques (logistic regression, LDA, QDA, KNN, SVM, and random forest) to predict the presence of blue tarps from disaster relief data.</p>
+<p><br></p>
+</div>
+</div>
+<div id="summer-2020" class="section level2">
+<h2><strong>Summer 2020</strong></h2>
+<div id="linear-models-for-data-science-stat-6021" class="section level3">
+<h3>Linear Models for Data Science (STAT 6021)</h3>
+<p><em>Course Description:</em> An introduction to linear statistical models in the context of data science. Topics include simple and multiple linear regression, generalized linear models, time series, analysis of covariance, tree-based classification, and principal components. The primary software is R.</p>
+<p><img src="Images/Chicago.jpg" height="400" /></p>
+<p><a href="https://github.com/camillevleonard/STAT6021_FinalProject">Final Project: Tip Analysis of Chicago Transportation Network Company Trips</a></p>
+<p><em>Project Description</em> Logistic regression was applied to the City of Chicago’s Transportation Networking Companies (TNC) “Trips” data set. Our group set out to predict whether a driver would receive a tip.</p>
+<p><br></p>
+</div>
+<div id="programming-and-systems-for-data-science-cs-5010" class="section level3">
+<h3>Programming and Systems for Data Science (CS 5010)</h3>
+<p><em>Course Description:</em> The objective of this course is to introduce basic data analysis techniques including data analysis at scale, in the context of real-world domains such as bioinformatics, public health, marketing, security, etc. For the purpose of facilitating data manipulation and analysis, students will be introduced to essential programming techniques in Python, an increasingly prominent language for data science and “big data” manipulation.</p>
+<div class="figure">
+<img src="Images/DART.jpg" alt="" />
+<p class="caption">2017 National Drug-Associated Death Rates</p>
+</div>
+<p><a href="https://github.com/camillevleonard/CS5010_FinalProject">Final Project: Drug Awareness Response Tool (DART)</a></p>
+<p><em>Project Description:</em> This project aims to develop knowledge and insight into the drug epidemic in the US between the years 2000-2017 using data accumulated by IHME through various governmental sources, including the CDC. The python module is intended to be flexible, allowing queries for all states, one state, all years in the time period, or even one year. The output is tabular in some cases and graphical in other cases. We intend the user to be at least familiar with python coding, data manipulation, and data visualization. The queries are robust, however, and do not require modifications for most basic queries.</p>
+<p><br></p>
+</div>
+</div>
+<div id="additional-learning" class="section level2">
+<h2><strong>Additional Learning</strong></h2>
+<ul>
+<li><a href="https://www.pluralsight.com/courses/how-git-works">How Git Works</a></li>
+</ul>
+<p><br> <br></p>
 <p>This website is created from Rmd files hosted on Github based on <a href="http://nickstrayer.me/RMarkdown_Sites_tutorial/">this tutorial</a> by Nick Strayer.</p>
 </div>
 
@@ -371,7 +373,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

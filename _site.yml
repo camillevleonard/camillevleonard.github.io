@@ -1,6 +1,6 @@
 name: "camilles-website"
 output_dir: "."
-site: rmarkdown::render_site()
+#site: rmarkdown::render_site()
 navbar:
   title: "Camille V. Leonard"
   left:

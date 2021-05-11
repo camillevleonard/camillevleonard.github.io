@@ -13,6 +13,27 @@ I'm currently completing a MS in Data Science through UVA's part-time online pro
 
 Below I have listed my UVA MSDS coursework, personal projects, and additional independent learning. To view project write-ups and code please visit the included links. I'm most proud of my final project from the Data Mining class. Check it out if you have a few minutes!
 
+<br> 
+
+## **Summer 2021**
+
+### Exploratory Text Analytics (DS 5001)
+
+*Course Description:* This course provides an introduction to text analytics with a focus on pattern discovery in long-form documents, such as reviews, news articles, and novels. Students convert source texts into structure-preserving analytical form and then apply information theory, NLP tools, and vector-based methods to explore language models, topic models, sentiment analyses, and narrative structures. The focus is on unsupervised methods to explore cognitive and social patterns in texts. Code work employs the Python stack, including NumPy, Pandas, SciKit Learn, NLTK, and other packages.
+
+<br> 
+
+### Big Data Systems 
+
+*Course Description:* Increasingly, data scientists and data engineers are working with datasets that exceed the memory of a single machine. This motivates the need for a different paradigm of computing and a different toolset. This course will prepare you for this use case.
+
+The focus of the course is learning Spark, an open-source, general-purpose computing framework that is scalable and blazingly fast. The fundamental data types and concepts will be covered (e.g., resilient distributed datasets, DataFrames). You will learn how to use Spark for large-scale analytics and machine learning, among other topics. Tools for data storage and retrieval will be covered, including AWS and the Hadoop ecosystem.
+
+A team project is a large component of the course, whereby you will conduct an end-to-end data science project. This simulates the workflow of a professional data scientist, from developing a hypothesis to communicating with stakeholders.
+
+After completing this course, you will have developed valuable data science skills and experience working with big data frameworks.
+
+
 <br>
 
 ## **Spring 2021**
@@ -43,7 +64,7 @@ Below I have listed my UVA MSDS coursework, personal projects, and additional in
 
 [Final Project: Haitain Earthquake Disaster Response](2020-11-22-haitian-blue-tarp/project.html)
 
-*Project Description:* Used data modeling techniques (logistic regression, LDA, QDA, KNN, SVM, and random forest) to predict the presence of blue tarps from disaster relief data.  
+*Project Description:* Predicted the presence of blue tarps from disaster relief data using data modeling techniques (logistic regression, LDA, QDA, KNN, SVM, and random forest).  
 
 <br>
 
@@ -57,7 +78,7 @@ Below I have listed my UVA MSDS coursework, personal projects, and additional in
 
 [Final Project: Tip Analysis of Chicago Transportation Network Company Trips](https://github.com/camillevleonard/STAT6021_FinalProject)
 
-*Project Description* Logistic regression was applied to the City of Chicago’s Transportation Networking Companies (TNC) “Trips” data set. Our group set out to predict whether a driver would receive a tip.  
+*Project Description* Predicted whether a driver would receive a tip using logistic regression applied to the City of Chicago’s Transportation Networking Companies (TNC) “Trips” data set. 
 
 <br>
 

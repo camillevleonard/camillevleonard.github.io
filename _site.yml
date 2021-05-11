@@ -1,5 +1,6 @@
 name: "camilles-website"
 output_dir: "."
+google_analytics: "G-GQXM52SL5X"
 #site: rmarkdown::render_site()
 navbar:
   title: "Camille V. Leonard"

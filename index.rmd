@@ -117,7 +117,7 @@ After completing this course, you will have developed valuable data science skil
 
 * [How Git Works](https://www.pluralsight.com/courses/how-git-works) 
 * Developing static websites with R Markdown files and Github Pages
-  * This website is created by this method and [www.bandybloomery.com](www.bandybloomery.com)
+  * This website is created by this method and [www.bandybloomery.com](https://www.bandybloomery.com/)
 
 <br>
 <br>
